@@ -43,5 +43,9 @@ cameraTrigger.onclick = function () {
     cameraOutput.classList.add("taken");
 };
 
+cameraInvert.onclick = function () {
+constraints.video.facingMode = enviroment
+};
+
 // carrega imagem de câmera quando a janela carregar
 window.addEventListener("load", cameraStart, false);
