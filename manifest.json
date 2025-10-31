@@ -1,0 +1,19 @@
+{
+    "name": "camera",
+    "short_name": "pc",
+    "icons": [{
+        "src": "images/3f36fcdd50dcbfd4a15080c52743a596.jpg",
+        "sizes": "256x256",
+        "type": "image/png"
+    },{
+        "src": "images/Icon_Pinguin_1_512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "lang": "pt-BR",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white"
+}
