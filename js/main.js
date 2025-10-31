@@ -11,13 +11,28 @@ if('serviceWorker' in navigator){
     })
 }
 
-var constraints = { video: { facingMode: "enviroment" }, audio: false };
+
 
 // capturando os elementos em tela
 const cameraView = document.querySelector("#camera--view");
 const cameraOutput = document.querySelector("#camera--output");
 const cameraSensor = document.querySelector("#camera--sensor");
+let cameraInvert = document.querySelector("#camera--invert");
+cameraInvert = true
 const cameraTrigger = document.querySelector("#camera--trigger");
+
+var constraints = { video: { facingMode: "user" }, audio: false };
+
+cameraInvert.onclick = function () {
+if(cameraInvert == true){
+cameraInvert = false
+var constraints = { video: { facingMode: "enviroment" }, audio: false };
+}else{
+    cameraInvert = true
+    var constraints = { video: { facingMode: "enviroment" }, audio: false }
+}
+}
+
 
 // Estabelecendo o acesso a câmera e inicializando a visualização
 function cameraStart() {
